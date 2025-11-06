@@ -1,0 +1,152 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #000000;
+    --rojo: rgba(209, 0, 0, 0.507);
+    --azul: #0000ff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover {
+color: var(--azul);
+}
+
+nav a:target {
+color: var(--negro);
+}
+
+nav a:focus {
+text-decoration: none;
+}
+
+#mod{
+    margin: 0;
+    font-size: 3rem;
+    font-family: "Modak", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.links{
+    color: var(--blanco);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    z-index: 20;
+    transition: 1.5s;
+}
+
+header {
+background: linear-gradient(to left, #3b3b3b, #ff0000 );
+color: var(--blanco);
+padding: 1rem 2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+}
+
+body{
+    color: var(--blanco);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 6rem; 
+    margin-top: 10vh;
+}
+
+
+h2{
+    font-family: "Permanent Marker", cursive;
+}
+
+main{
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.neo p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    background-color: var(--rojo);
+    padding: 1rem;
+    border-radius: 10px;
+}   
+
+.TOP_CANCIONES, .Biografía, .Carrera-solista, .Datos_Curiosos{
+    background-color: var(--rojo);
+    font-family: "Permanent Marker", cursive;
+    width: 40rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px var(--negro);
+}
+
+.TOP_CANCIONES:hover, .Biografía:hover, .Carrera-solista:hover, .Datos_Curiosos:hover{
+    transform: scale(1.05);
+}
+
+#informacion{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#album{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+li{
+    text-align: start;
+}
+
+.splash-regular{
+  font-family: "Splash", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    background: var(--negro);
+    width: 100%;
+}
+
+.barra{
+    width: 100%;
+}
+
+@media (max-width: 1028px){
+    h1 {font-size: 4rem;}
+    .MQ {flex-direction: column; align-items: center;}
+    .barra{width: auto;}
+    #album_titulo{opacity: 1%;}
+    .video-neopistea{width: 600px;}
+}
+
+@media (max-width: 768px){
+    nav a {font-size: 1.2rem; padding: 10px 15px;}
+    main {padding: 1rem;}
+}
+
+@media (max-width: 480px){
+    h1 {font-size: 3rem;}
+    .TOP_CANCIONES, .Biografía, .Carrera-solista, .Datos_Curiosos {width: 90%;}
+}

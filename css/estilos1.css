@@ -1,0 +1,171 @@
+:root {
+    --blanco: white;
+    --negro: black;
+    --gris: aliceblue;
+    --rojo: rgba(209, 0, 0, 0.507);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--blanco);
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem; 
+    margin-top: 10vh;
+    color: var(--gris);
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+nav a {
+    padding: 15px 25px;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 1.4em;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+nav a:focus {
+    outline: 2px solid var(--blanco);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 9px;
+    text-align: center;
+}
+
+.mdo p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    background-color: var(--rojo);
+    padding: 1rem;
+    border-radius: 10px;
+}   
+
+.mdd {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.duki, .ysya, .neo {
+    background-color: var(--rojo);
+    font-family: "Permanent Marker", cursive;
+    width: 17rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.duki:hover, .ysya:hover, .neo:hover {
+    transform: scale(1.05);
+}
+
+.duki img, .ysya img, .neo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.muestra-audio {
+    text-align: center;
+    margin-top: 3rem;
+    color: var(--blanco);
+    font-family: "Permanent Marker", cursive;
+}
+
+.muestra-audio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.muestra-audio iframe {
+    width: 80%;
+    max-width: 500px;
+    height: 152px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.img-integrante {
+    width: 60%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+section:target {
+    border: 2px solid var(--gris);
+    box-shadow: 0 0 15px var(--gris);
+}
+
+@media (max-width: 992px) {
+    h1 { 
+        font-size: 4rem; 
+    }
+    .mdd { 
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+@media (max-width: 768px) {
+    nav a { 
+        font-size: 1.2rem; 
+        padding: 10px 15px; 
+    }
+    main { 
+        padding: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 3rem; 
+    }
+    .duki, .ysya, .neo { 
+        width: 90%; 
+    }
+}
