@@ -133,6 +133,10 @@ footer{
     width: 100%;
 }
 
+#video{
+    width: 50rem;
+}
+
 @media (max-width: 1028px){
     h1 {font-size: 4rem;}
     .MQ {flex-direction: column; align-items: center;}
@@ -149,4 +153,5 @@ footer{
 @media (max-width: 480px){
     h1 {font-size: 3rem;}
     .TOP_CANCIONES, .Biografía, .Carrera-solista, .Datos_Curiosos {width: 90%;}
+
 }
