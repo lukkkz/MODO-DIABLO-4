@@ -62,7 +62,7 @@ main {
     text-align: center;
 }
 
-.mdo p {
+.mdo > p {
     font-size: 1.4rem;
     line-height: 1.6;
     max-width: 900px;
@@ -168,4 +168,5 @@ section:target {
         width: 90%; 
     }
 }
+
 
