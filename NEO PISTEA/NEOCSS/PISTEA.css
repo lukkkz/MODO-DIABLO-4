@@ -112,6 +112,7 @@ main{
 
 li{
     text-align: start;
+    list-style:inside;
 }
 
 .splash-regular{
@@ -155,3 +156,4 @@ footer{
     .TOP_CANCIONES, .Biografía, .Carrera-solista, .Datos_Curiosos {width: 90%;}
 
 }
+
