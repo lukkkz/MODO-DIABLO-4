@@ -6,9 +6,11 @@
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 body {
     color: var(--blanco);
 }
@@ -20,11 +22,8 @@ h1 {
     color: var(--gris);
 }
 
-.permanent-marker-regular {
-    font-family: "Permanent Marker", cursive;
-}
 
-h2 {
+h2, h1 {
     font-family: "Permanent Marker", cursive;
 }
 
@@ -115,8 +114,7 @@ main {
 .muestra-audio iframe {
     width: 80%;
     max-width: 500px;
-    height: 152px;
-    border: none;
+    height: 155px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
