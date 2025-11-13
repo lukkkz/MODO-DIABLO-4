@@ -128,7 +128,7 @@ footer {
 }
 
 nav .links:target {
-    color: var(--amarillo);
+    transition: 1s;
 }
 
 nav .links:focus{
