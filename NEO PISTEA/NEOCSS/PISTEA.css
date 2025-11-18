@@ -138,22 +138,43 @@ footer{
     width: 50rem;
 }
 
-@media (max-width: 1028px){
-    h1 {font-size: 4rem;}
-    .MQ {flex-direction: column; align-items: center;}
-    .barra{width: auto;}
-    #album_titulo{opacity: 1%;}
-    .video-neopistea{width: 600px;}
+@media screen and (min-width: 1028px){
+
+    .barra{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    .articulo{
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 768px){
+    .barra{
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+
+    .articulo{
+        flex-wrap: wrap;
+    }
 }
 
-@media (max-width: 768px){
-    nav a {font-size: 1.2rem; padding: 10px 15px;}
-    main {padding: 1rem;}
+@media screen and (max-width: 480px){
+
+    .barra{
+        width: 100%;
+    }
+
+    .articulo{
+        flex-wrap: wrap;
+
+    }
+
 }
 
-@media (max-width: 480px){
-    h1 {font-size: 3rem;}
-    .TOP_CANCIONES, .Biografía, .Carrera-solista, .Datos_Curiosos {width: 90%;}
 
-}
 
