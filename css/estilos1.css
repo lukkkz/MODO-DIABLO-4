@@ -6,11 +6,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
     color: var(--blanco);
 }
@@ -22,8 +20,11 @@ h1 {
     color: var(--gris);
 }
 
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+}
 
-h2, h1 {
+h2 {
     font-family: "Permanent Marker", cursive;
 }
 
@@ -61,7 +62,7 @@ main {
     text-align: center;
 }
 
-.mdo > p {
+.mdo p {
     font-size: 1.4rem;
     line-height: 1.6;
     max-width: 900px;
@@ -95,6 +96,7 @@ main {
 
 .duki img, .ysya img, .neo img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -114,7 +116,8 @@ main {
 .muestra-audio iframe {
     width: 80%;
     max-width: 500px;
-    height: 155px;
+    height: 152px;
+    border: none;
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
@@ -138,6 +141,20 @@ section:target {
     box-shadow: 0 0 15px var(--gris);
 }
 
+#menu-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+}
+
 @media (max-width: 992px) {
     h1 { 
         font-size: 4rem; 
@@ -149,12 +166,33 @@ section:target {
 }
 
 @media (max-width: 768px) {
-    nav a { 
-        font-size: 1.2rem; 
-        padding: 10px 15px; 
+
+    nav {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
     }
-    main { 
-        padding: 1rem; 
+
+    nav a {
+        margin: 0;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        display: block;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu-checkbox:checked ~ nav {
+        max-height: 300px;
     }
 }
 
